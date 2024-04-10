@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Model\" />
+  </ItemGroup>
 </Project>

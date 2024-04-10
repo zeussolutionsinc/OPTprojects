@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Technician.Dispatch.Project.BL.Interfaces;
 
 namespace TechDispatchProjectAPI.Controllers;
 
+
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -12,22 +14,22 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly IUser _iUser;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, IUser iUser )
     {
         _logger = logger;
+        _iUser = iUser;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    [HttpGet(Name = "GetAllUsers")]
+    public async Task<IActionResult> GetAllUsers()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        var users = await _iUser.GetAllUsers();
+        return Ok(users);
     }
+
+    
 }
 
