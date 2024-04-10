@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/kanthrajs/.nuget/packages/": {}
+    "/Users/anirudhramesh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kanthrajs/Projects/TechDispatchProjectAPI/Technician.Dispatch.Project.BL/Technician.Dispatch.Project.BL.csproj",
+      "projectUniqueName": "/Users/anirudhramesh/Desktop/ZeusL/cnet/OPTprojects/Technician.Dispatch.Project.BL/Technician.Dispatch.Project.BL.csproj",
       "projectName": "Technician.Dispatch.Project.BL",
-      "projectPath": "/Users/kanthrajs/Projects/TechDispatchProjectAPI/Technician.Dispatch.Project.BL/Technician.Dispatch.Project.BL.csproj",
-      "packagesPath": "/Users/kanthrajs/.nuget/packages/",
-      "outputPath": "/Users/kanthrajs/Projects/TechDispatchProjectAPI/Technician.Dispatch.Project.BL/obj/",
+      "projectPath": "/Users/anirudhramesh/Desktop/ZeusL/cnet/OPTprojects/Technician.Dispatch.Project.BL/Technician.Dispatch.Project.BL.csproj",
+      "packagesPath": "/Users/anirudhramesh/.nuget/packages/",
+      "outputPath": "/Users/anirudhramesh/Desktop/ZeusL/cnet/OPTprojects/Technician.Dispatch.Project.BL/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kanthrajs/.nuget/NuGet/NuGet.Config"
+        "/Users/anirudhramesh/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
       }
     }
   }
