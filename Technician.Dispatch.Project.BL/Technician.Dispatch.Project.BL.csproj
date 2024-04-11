@@ -16,4 +16,7 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Model\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
 </Project>
