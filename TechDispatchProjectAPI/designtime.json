@@ -1,13 +1,7 @@
 ﻿{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
   "ConnectionStrings": {
     "DbCon": "Server=localhost,1433;Database=CompanyEmployee_DB;User Id=sa;Password=testing1234;Encrypt=False;"
-  },
-  "AllowedHosts": "*"
+  }
+
 }
 

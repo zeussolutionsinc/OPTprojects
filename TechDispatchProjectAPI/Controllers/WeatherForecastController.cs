@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Technician.Dispatch.Project.BL.Interfaces;
+//using Technician.Dispatch.Project.BL.Interfaces;
 
 namespace TechDispatchProjectAPI.Controllers;
 
@@ -14,22 +14,22 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
-    private readonly IUser _iUser;
+    //private readonly IUser _iUser;
 
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger, IUser iUser )
+    public WeatherForecastController(ILogger<WeatherForecastController> logger) //IUser iUser )
     {
         _logger = logger;
-        _iUser = iUser;
+       // _iUser = iUser;
     }
 
-    [HttpGet(Name = "GetAllUsers")]
-    public async Task<IActionResult> GetAllUsers()
-    {
-        var users = await _iUser.GetAllUsers();
-        return Ok(users);
-    }
+    //[HttpGet(Name = "GetAllUsers")]
+    //public async Task<IActionResult> GetAllUsers()
+    //{
+    //    //var users = await _iUser.GetAllUsers();
+    //    return Ok(users);
+    //}
 
-    
+
 }
 

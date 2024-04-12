@@ -29,6 +29,8 @@ namespace Technician.Dispatch.Project.DAL.Entities
         [ForeignKey("Supervisor")]
         public Guid SuperVisorID { get; set; }
         public User Supervisor { get; set; }
+
+
     }
 }
 

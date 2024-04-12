@@ -24,5 +24,8 @@
     <ProjectReference Include="..\Technician.Dispatch.Project.BL\Technician.Dispatch.Project.BL.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\Technician.Dispatch.Project.DAL\Technician.Dispatch.Project.DAL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -9,12 +9,10 @@
   <ItemGroup>
     <None Remove="Services\" />
     <None Remove="Interfaces\" />
-    <None Remove="Model\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
