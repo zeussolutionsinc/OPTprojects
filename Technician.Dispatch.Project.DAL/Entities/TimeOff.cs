@@ -1,7 +1,7 @@
 ﻿using System;
-namespace Technician.Dispatch.Project.BL.Model
+namespace Technician.Dispatch.Project.DAL.Entities
 {
-	public class TimeOffsDto
+	public class TimeOff
 	{
 		public int UserId{ get; set; }
 		public TimeOffType TimeOffType{ get; set; }
@@ -13,6 +13,7 @@ namespace Technician.Dispatch.Project.BL.Model
         public DateTime CreatedTime { get; set; }
         public string UpdatedUser { get; set; }
         public DateTime UpdatedTime { get; set; }
+        public RowStatus RowStatus { get; set; }
     }
 }
 

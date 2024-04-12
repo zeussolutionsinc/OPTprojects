@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Technician.Dispatch.Project.BL.Model
+namespace Technician.Dispatch.Project.DAL.Entities
 {
 	public enum TimeOffType
 	{

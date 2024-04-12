@@ -1,11 +1,19 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection.Metadata.Ecma335;
 
 namespace Technician.Dispatch.Project.DAL.Entities
 {
-	public class UserSkill
-	{
+    public class User
+    {
+        
+        public Guid UserID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string EmailId { get; set; }
+        public int HourlyRate { get; set; }
+
+        public UserStatus Status { get; set; }
         public RowStatus RowStatus { get; set; }
 
         [ForeignKey("CreatedUser")]
@@ -18,8 +26,10 @@ namespace Technician.Dispatch.Project.DAL.Entities
         public User UpdatedUser { get; set; }
         public DateTime UpdatedTime { get; set; }
 
-        public User UserID { get; set; }
-        public Skill SkillId { get; set; }
+        [ForeignKey("Supervisor")]
+        public Guid SuperVisorID { get; set; }
+        public User Supervisor { get; set; }
     }
 }
+
 

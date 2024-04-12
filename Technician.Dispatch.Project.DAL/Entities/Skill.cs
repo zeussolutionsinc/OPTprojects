@@ -1,14 +1,17 @@
 ﻿using System;
-namespace Technician.Dispatch.Project.BL.Model
+namespace Technician.Dispatch.Project.DAL.Entities
 {
-	public class UserRolesDto
+	public class Skill
 	{
-		public int UserId { get; set; }
-		public int RoleId { get; set; }
+		public string Name{ get; set; }
+		public Guid SkillId{ get; set; }
         public string CreatedUser { get; set; }
         public DateTime CreatedTime { get; set; }
         public string UpdatedUser { get; set; }
         public DateTime UpdatedTime { get; set; }
+        public RowStatus RowStatus { get; set; }
+
+
     }
 }
 

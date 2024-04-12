@@ -1,7 +1,7 @@
 ﻿using System;
-namespace Technician.Dispatch.Project.BL.Model
-{
-	public enum WorkOrderStatus
+namespace Technician.Dispatch.Project.DAL.Entities
+{ 
+    public enum WorkOrderStatus
 	{
 		Completed,
 		InProgress,
@@ -10,4 +10,5 @@ namespace Technician.Dispatch.Project.BL.Model
 		OnHold
 	}
 }
+
 

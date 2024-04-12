@@ -1,9 +1,8 @@
 ﻿using System;
-namespace Technician.Dispatch.Project.BL.Model
+namespace Technician.Dispatch.Project.DAL.Entities
 {
-	public class WorkOrderPaymentsDto
+	public class WorkOrderPayment
 	{
-        public int WorkOrderId { get; set; }
         public int PaymentId { get; set; }
         public PaymentTypes PaymentTypes{ get; set; }
         public int AmountCollected { get; set; }
@@ -11,6 +10,9 @@ namespace Technician.Dispatch.Project.BL.Model
         public DateTime CreatedTime { get; set; }
         public string UpdatedUser { get; set; }
         public DateTime UpdatedTime { get; set; }
+
+        public WorkOrder WorkOrderId { get; set; }
+        public RowStatus RowStatus { get; set; }
     }
 }
 
