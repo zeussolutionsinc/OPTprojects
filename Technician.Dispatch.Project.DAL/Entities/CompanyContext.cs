@@ -14,10 +14,10 @@ namespace Technician.Dispatch.Project.DAL.Entities
         {
 
         }
-        //protected override void OnConfiguring(DbContextOptionsBuilder options)
-        //=> options.UseSqlServer(
-        //    "DbCon",
-        //    x => x.MigrationsAssembly("Technician.Dispatch.Project.DAL"));
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        => options.UseSqlServer(
+            "DbCon",
+            x => x.MigrationsAssembly("TechDispatchProjectAPI"));
 
 
         //public DbSet<Role> Roles { get; set; }
